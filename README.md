@@ -41,7 +41,7 @@ library(limma)
 library(EnhancedVolcano)
 
 # 1. Load dataset and configure matrix row names
-data <- read.delim("HDAC1.tsv", header = TRUE, sep = "\t")
+data <- read.delim("hdac1.txt", header = TRUE, sep = "\t")
 rownames(data) <- data$ID
 expr_data <- data[, c("KO1", "KO2", "KO3", "WT1", "WT2", "WT3")]
 
